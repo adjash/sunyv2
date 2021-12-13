@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUNY</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/sectionStyling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="content__width">
+            <div class="full__row">
+                <div class="nav__content_wrapper">
+                    <a href="#" class="logo">
+                        <img src="./img/SUNY Online Logo Final-01.png" alt="Logo">
+                    </a>
+                    <ul class="main__nav">
+                        <li class="menu_item"><a href="#">Explore Online</a></li>
+                        <li class="menu_item"><a href="#">Request Info</a></li>
+                        <li class="menu_item"><a href="#">Affordable</a></li>
+                        <li class="menu_item"><a href="#">Faqs</a></li>
+                        <li class="menu_item"><a href="#"><i class="fas fa-ellipsis-v"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="content__width">
+            <div class="three_quart__row">
+                <div class="hero__content">
+                    <h1>Hero Header Title</h1>
+                    <p>Description lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="hero__filters">
+                    <select name="Industry" id="industry">
+                        <option value="industry">Choose an Industry</option>
+                        <option value="Math">Math</option>
+                        <option value="Science">Science</option>
+                        <option value="Music">Music</option>
+                        <option value="Art">Art</option>
+                    </select>
+
+                    <select name="Degree" id="degree" disabled>
+                        <option value="degree">Choose an Degree</option>
+                        <option value="bsc" data-industry="Math">bsc</option>
+                        <option value="beng" data-industry="Science">beng</option>
+                        <option value="phd" data-industry="Music">phd</option>
+                        <option value="hnd" data-industry="Art">hnd</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="industry__toggles">
+        <div class="content__width">
+            <div class="full__row">
+                <div class="expandable__wrap">
+
+                    <div class="industry__toggle" data-industry="healtcare">
+                        <a href="#" class="toggle__close"><i class="fas fa-times"></i></a>
+                        <img src="./img/healthcare-logo.png" alt="">
+                        <h4>Healthcare Management</h4>
+                        <div class="toggle__content">
+                            <p>Sit lorem ipsum dolor amet consecur adipisi Eiusmod me erat voluat Ut wisi enip uistis lorem fantentis ut ibis.</p>
+                            <a href="#">CTA To Page <i class="fas fa-angle-right"></i></a>
+                        </div>
+                        <a href="#" class="toggle__open"><i class="fas fa-plus"></i></a>
+                    </div>
+
+                    <div class="industry__toggle" data-industry="psychology">
+                        <a href="#" class="toggle__close"><i class="fas fa-times"></i></a>
+                        <img src="./img/datascience-logo.png" alt="">
+                        <h4>Psychology</h4>
+                        <div class="toggle__content">
+                            <p>Sit lorem ipsum dolor amet consecur adipisi Eiusmod me erat voluat Ut wisi enip uistis lorem fantentis ut ibis.</p>
+                            <a href="#">CTA To Page <i class="fas fa-angle-right"></i></a>
+                        </div>
+                        <a href="#" class="toggle__open"><i class="fas fa-plus"></i></a>
+                    </div>
+
+                    <div class="industry__toggle" data-industry="data-science">
+                        <a href="#" class="toggle__close"><i class="fas fa-times"></i></a>
+                        <img src="./img/datascience-logo.png" alt="">
+                        <h4>Data Science/ Crime Analysis</h4>
+                        <div class="toggle__content">
+                            <p>Sit lorem ipsum dolor amet consecur adipisi Eiusmod me erat voluat Ut wisi enip uistis lorem fantentis ut ibis.</p>
+                            <a href="#">CTA To Page <i class="fas fa-angle-right"></i></a>
+                        </div>
+                        <a href="#" class="toggle__open"><i class="fas fa-plus"></i></a>
+                    </div>
+
+                    <div class="industry__toggle" data-industry="networking">
+                        <a href="#" class="toggle__close"><i class="fas fa-times"></i></a>
+                        <img src="./img/networking-logo.png" alt="">
+                        <h4>Network and Cyber Security</h4>
+                        <div class="toggle__content">
+                            <p>Sit lorem ipsum dolor amet consecur adipisi Eiusmod me erat voluat Ut wisi enip uistis lorem fantentis ut ibis.</p>
+                            <a href="#">CTA To Page <i class="fas fa-angle-right"></i></a>
+                        </div>
+                        <a href="#" class="toggle__open"><i class="fas fa-plus"></i></a>
+                    </div>
+
+                    <div class="industry__toggle" data-industry="accounting">
+                        <a href="#" class="toggle__close"><i class="fas fa-times"></i></a>
+                        <img src="./img/accounting-logo.png" alt="">
+                        <h4>Accounting and Business</h4>
+                        <div class="toggle__content">
+                            <p>Sit lorem ipsum dolor amet consecur adipisi Eiusmod me erat voluat Ut wisi enip uistis lorem fantentis ut ibis.</p>
+                            <a href="#">CTA To Page <i class="fas fa-angle-right"></i></a>
+                        </div>
+                        <a href="#" class="toggle__open"><i class="fas fa-plus"></i></a>
+                    </div>
+
+                    <div class="industry__toggle" data-industry="all">
+                        <a href="#" class="toggle__close"><i class="fas fa-times"></i></a>
+                        <img src="./img/see-all.png" alt="">
+                        <h4>See all Programs</h4>
+                        <div class="toggle__content">
+                            <p>Sit lorem ipsum dolor amet consecur adipisi Eiusmod me erat voluat Ut wisi enip uistis lorem fantentis ut ibis.</p>
+                            <a href="#">CTA To Page <i class="fas fa-angle-right"></i></a>
+                        </div>
+                        <a href="#" class="toggle__open"><i class="fas fa-plus"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content__section">
+        <div class="content__width">
+            <div class="full__row">
+                <div class="basic__content center">
+                    <h2>Content Title Goes Here</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form__section">
+        <div class="content__width">
+            <div class="full__row">
+                <div class="full__form">
+                    <div class="form__title">
+                        <h2>Tell Us More</h2>
+                    </div>
+                    <div class="form__wrap">
+                        <form action="" method="post">
+                            <div class="form__main">
+                                <input type="text" placeholder="First Name">
+                                <input type="text" placeholder="Last Name">
+                                <input type="text" placeholder="Email Address">
+                                <input type="text" placeholder="Phone Number">
+                                <select name="Country" id="country">
+                                    <option value="Select Country">Select Country</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="US">United States of America</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="BR">Brazil</option>
+                                    <option value="JP">Japan</option>
+                                </select>
+                                <input type="text" placeholder="Postal Code">
+                                <select name="Education" id="education">
+                                    <option value="Education Level">Education Level</option>
+                                    <option value="PHD">PHD</option>
+                                    <option value="MSC">MSC</option>
+                                    <option value="BSC">BSC</option>
+                                    <option value="HND">HND</option>
+                                </select>
+                            </div>
+                            <div class="study__fieldset">
+                                <legend>I would like to Study:</legend>
+                                <div><input type="checkbox" name="Accounting" value="accounting" id="accounting">Accounting</div>
+                                <div><input type="checkbox" name="Healthcare" value="healthcare" id="healthcare">Healthcare</div>
+                                <div><input type="checkbox" name="Psychology" value="psychology" id="psychology">Psychology</div>
+                                <div><input type="checkbox" name="Data" value="data-science" id="data-science">Data Science</div>
+                                <div><input type="checkbox" name="Digital" value="digital-security" id="digital-security">Digital Security</div>
+                                <div><input type="checkbox" name="Other" value="other" id="other">Other</div>
+                            </div>
+
+                            <button type="submit">Submit <i class="fas fa-angle-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimony__section">
+        <div class="content__width">
+            <div class="full__row">
+                <div class="testimonial__images">
+                    <img src="./img/location.png" alt="" class="location">
+                    <img src="./img/headshot.png" alt="" class="headshot">
+                    <img src="./img/quotes.png" alt="" class="quotes">
+                </div>
+            </div>
+            <div class="full__row">
+                <div class="testimonial__wrap center">
+                    <h2>Ashley Taylow - Psychology BA, 2018</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi nemo esse facere quod cumque corrupti non molestias dicta hic aspernatur dolores, quibusdam unde sequi ipsam earum eos, omnis distinctio modi. Tempora, at eum eius
+                        quidem praesentium eveniet facilis exercitationem! Recusandae quisquam distinctio veritatis quasi iure natus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements__section">
+        <div class="content__width">
+            <div class="full__row center">
+                <h3>Achievements</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur totam quia velit aspernatur explicabo nostrum et voluptates illo, deleniti natus repellat blanditiis, culpa voluptate eius nam laudantium eum tempore libero?</p>
+            </div>
+            <div class="full__row">
+                <div class="achievements__wrap">
+                    <div class="achievement__column">
+                        <div class="achievement_img">
+                            <img src="./img/leaderboard.png" alt="" class="achievement__logo">
+                        </div>
+                        <span class="achievement__counter" id="specialCounter">3000</span>
+                        <p class="achievement__title">lorem ipsum</p>
+                    </div>
+                    <div class="achievement__column">
+                        <div class="achievement_img">
+                            <img src="./img/tablet.png" alt="" class="achievement__logo">
+                        </div>
+                        <span class="achievement__counter">32</span>
+                        <p class="achievement__title">lorem ipsum</p>
+                    </div>
+                    <div class="achievement__column">
+                        <div class="achievement_img">
+                            <img src="./img/building.png" alt="" class="achievement__logo">
+                        </div>
+                        <span class="achievement__counter">200</span>
+                        <p class="achievement__title">lorem ipsum</p>
+                    </div>
+                    <div class="achievement__column">
+                        <div class="achievement_img">
+                            <img src="./img/guywithhat.png" alt="" class="achievement__logo">
+                        </div>
+                        <span class="achievement__counter">150</span>
+                        <p class="achievement__title">lorem ipsum</p>
+                    </div>
+                    <div class="achievement__column">
+                        <div class="achievement_img">
+                            <img src="./img/piechart.png" alt="" class="achievement__logo">
+                        </div>
+                        <span class="achievement__counter">99</span>
+                        <p class="achievement__title">lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="full__row">
+                <div class="contact center">
+                    <a href="#" class="contact__cta">Contact Us  <i class="fas fa-angle-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="content__width">
+            <div class="full__row">
+                <div class="footer__system_link">
+                    <a href="#" class="system__link">system.suny.edu</a>
+                </div>
+            </div>
+            <div class="half__row">
+                <div class="footer__links">
+                    <ul class="footerNav">
+                        <li class="footer_link"><a href="#">Contact Us</a></li>
+                        <li class="footer_link"><a href="#">Careers at SUNY</a></li>
+                        <li class="footer_link"><a href="#">About SUNY</a></li>
+                        <li class="footer_link"><a href="#">What is SUNY?</a></li>
+                        <li class="footer_link"><a href="#">why does SUNY matter</a></li>
+                    </ul>
+                    <ul class="footerNav">
+                        <li class="footer_link"><a href="#">Contact Us</a></li>
+                        <li class="footer_link"><a href="#">Careers at SUNY</a></li>
+                        <li class="footer_link"><a href="#">About SUNY</a></li>
+                        <li class="footer_link"><a href="#">What is SUNY?</a></li>
+                        <li class="footer_link"><a href="#">why does SUNY matter</a></li>
+                    </ul>
+                    <ul class="footerNav">
+                        <li class="footer_link"><a href="#">Contact Us</a></li>
+                        <li class="footer_link"><a href="#">Careers at SUNY</a></li>
+                        <li class="footer_link"><a href="#">About SUNY</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="quart__row">
+                <div class="follow">
+                    <div class="footer__follow">
+                        <p class="system__link">Follow Us</p>
+                    </div>
+                    <div class="social__links">
+                        <ul class="socialNav">
+                            <li class="social"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li class="social"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li class="social"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li class="social"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="quart__row">
+                <div class="footer_logo">
+                    <img src="./img/sunylogo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
