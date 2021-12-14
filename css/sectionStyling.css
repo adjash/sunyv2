@@ -57,7 +57,7 @@ header {
     background-image: url('../img/Homepage\ V1\ –\ 1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 75vh;
+    height: clamp(500px, 75vh, 750px);
     display: flex;
     align-items: center;
     position: relative;
@@ -65,6 +65,7 @@ header {
 
 .hero__content {
     color: white;
+    margin-bottom: 2rem;
 }
 
 .hero__content p {
@@ -151,6 +152,8 @@ header select:disabled {
     opacity: 0;
     transform: translateY(100%);
     height: 0;
+    overflow: hidden;
+    text-align: left;
 }
 
 .toggle__open {
@@ -179,10 +182,6 @@ header select:disabled {
     display: grid;
     place-content: center;
     opacity: 0;
-}
-
-.toggle__content {
-    text-align: left;
 }
 
 .toggle__content p {
@@ -598,8 +597,12 @@ footer {
         display: block;
         width: 25px;
         height: 3px;
-        background-color: black;
+        background-color: white;
         margin: 2px 0;
+        border-radius: 20px;
+    }
+    .main__nav.active #mobile__menu_toggle span {
+        background-color: var(--light-blue);
     }
     .main__nav.active #mobile__menu_toggle span:first-child {
         transform: rotate(45deg) translate(-3px);
@@ -654,6 +657,9 @@ footer {
     }
     .hero__filters select:first-child {
         margin-bottom: 1rem;
+    }
+    header select {
+        width: 100%;
     }
     .achievement__column {
         width: 100%;

@@ -34,15 +34,16 @@ a {
 
 h1 {
     font-size: clamp(3rem, 5vw, 4rem);
-    margin: .5rem 0;
+    margin: 1.2rem 0;
 }
 
 h2 {
     font-size: clamp(1.75rem, 2.5rem, 3rem);
+    margin: 1rem 0;
 }
 
 h3 {
-    font-size: clamp(1.5rem, 3vw, 2.75rem);
+    font-size: clamp(1.5rem, 2.25rem, 2.75rem);
 }
 
 img {
@@ -50,7 +51,7 @@ img {
 }
 
 .content__width {
-    width: 95%;
+    width: 90%;
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
@@ -120,6 +121,7 @@ img {
         flex-direction: column;
         justify-content: center;
     }
+    .three_quart__row,
     .half__row,
     .third__row,
     .quart__row,
