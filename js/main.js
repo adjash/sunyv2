@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
     mobileToggle.addEventListener('click', function(e) {
         e.preventDefault();
         console.log(mobileWrap.parentElement);
+        /* 
+            if the menu is active and gets closed, add a delay, 
+            this allows for the slide out to work 
+        */
         if (mobileWrap.parentElement.classList.contains('active')) {
             setTimeout(function(e) {
                 mobileWrap.parentElement.classList.toggle('active');
@@ -13,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             mobileWrap.parentElement.classList.toggle('active');
         }
-        /* mobileWrap.parentElement.classList.toggle('active'); */
         mobileWrap.classList.toggle('active');
     });
     /* mobile navigation */
@@ -23,6 +26,11 @@ document.addEventListener("DOMContentLoaded", function() {
     let degreeToggle = document.querySelector('#degree');
     let availableDegrees = document.querySelectorAll('#degree > option');
 
+    /* 
+        check if the industry selected from the dropdown is the default, 
+        if not, remove disabled dropdown and hide all of the degree choices which
+        aren't relevant to the industry chosen.
+    */
     industryToggle.addEventListener('click', function(e) {
         if (industryToggle.value === 'industry') {
             degreeToggle.setAttribute("disabled", "true");
@@ -39,18 +47,20 @@ document.addEventListener("DOMContentLoaded", function() {
     /* header dropdown code */
 
     /* expandable industry list */
+
+    //expand the industry, if there's any others active, deactivate those
     document.querySelectorAll(".toggle__open").forEach((toggle) => {
         toggle.addEventListener("click", function(e) {
             e.preventDefault();
             if (document.querySelector('.active__toggle')) {
                 /* let activeToggle = document.querySelector('.active__toggle'); */
                 document.querySelector('.active__toggle').classList.remove('active__toggle');
-
             }
 
             toggle.parentElement.classList.add('active__toggle');
         });
     });
+    //close the expanded industry
     document.querySelectorAll(".toggle__close").forEach((toggleClose) => {
         toggleClose.addEventListener("click", function(e) {
             e.preventDefault();

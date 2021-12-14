@@ -418,6 +418,10 @@ button[type=submit] i {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* --auto-grid-min-size: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 5rem; */
 }
 
 .achievement__column {
@@ -590,6 +594,9 @@ footer {
     .study__fieldset {
         align-items: center;
     }
+    .footer_logo {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -680,5 +687,19 @@ footer {
     }
     .testimonial__images img:not(.headshot) {
         display: none;
+    }
+    .footer__links {
+        flex-wrap: wrap;
+    }
+    .footerNav {
+        width: 48%;
+    }
+    .follow {
+        padding: 0;
+        margin: 2rem 0;
+    }
+    .footer_logo {
+        justify-content: center;
+        margin: 2rem 0;
     }
 }
