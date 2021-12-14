@@ -23,6 +23,12 @@ nav {
     align-items: center;
 }
 
+.mobile__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .main__nav a {
     color: white;
     position: relative;
@@ -85,8 +91,9 @@ header select option {
     background-color: white;
     color: var(--light-blue);
 }
+
 header select:disabled {
-    background-color:grey;
+    background-color: grey;
 }
 
 .hidden {
@@ -288,7 +295,7 @@ header select:disabled {
     width: 25%;
     display: flex;
     flex-direction: column;
-    padding: 0 3rem;
+    padding: 0 2rem;
 }
 
 .study__fieldset div:not([class]),
@@ -411,6 +418,7 @@ button[type=submit] i {
 .achievements__wrap {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .achievement__column {
@@ -552,3 +560,119 @@ footer {
 
 
 /* footer */
+
+#mobile__menu_toggle {
+    display: none;
+}
+
+@media screen and (max-width: 1070px) {
+    .achievements__wrap {
+        justify-content: center;
+    }
+    .expandable__wrap {
+        flex-wrap: wrap;
+    }
+    .industry__toggle {
+        width: 32%;
+        margin-bottom: 2rem;
+    }
+    .study__fieldset {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .form__wrap form {
+        flex-direction: column;
+    }
+    .form__wrap form>div {
+        width: 100%;
+    }
+    .study__fieldset {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #mobile__menu_toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 2px 0;
+    }
+    .main__nav.active #mobile__menu_toggle span:first-child {
+        transform: rotate(45deg) translate(-3px);
+    }
+    .main__nav.active #mobile__menu_toggle span:nth-child(2) {
+        transform: rotate(-45deg) translate(3px, -7px);
+    }
+    .main__nav.active #mobile__menu_toggle span:last-child {
+        opacity: 0;
+    }
+    #mobile__menu_toggle {
+        display: block;
+    }
+    .main__nav {
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        overflow: hidden;
+    }
+    .main__nav.active {
+        overflow: visible;
+    }
+    .mobile__wrap {
+        transform: translateX(102%);
+        position: absolute;
+        height: 300px;
+        top: 110%;
+        width: 70vw;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .mobile__wrap.active {
+        transform: translateX(0%);
+    }
+    .main__nav li {
+        background-color: white;
+        padding: 1rem .5rem;
+        text-align: right;
+        border-bottom: 1px solid var(--dark-blue)
+    }
+    .main__nav li a {
+        color: var(--light-blue);
+    }
+    .main__nav a::after {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero__filters {
+        flex-direction: column;
+    }
+    .hero__filters select:first-child {
+        margin-bottom: 1rem;
+    }
+    .achievement__column {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .industry__toggle {
+        width: 48%;
+    }
+    .full__form {
+        padding: 2rem;
+    }
+    .study__fieldset {
+        align-items: flex-start;
+    }
+    .form__main input,
+    #country {
+        width: 100%;
+    }
+    .testimonial__images img:not(.headshot) {
+        display: none;
+    }
+}

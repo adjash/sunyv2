@@ -1,4 +1,23 @@
 document.addEventListener("DOMContentLoaded", function() {
+    /* mobile navigation */
+    let mobileToggle = document.querySelector('#mobile__menu_toggle');
+    let mobileWrap = document.querySelector('.mobile__wrap');
+
+    mobileToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log(mobileWrap.parentElement);
+        if (mobileWrap.parentElement.classList.contains('active')) {
+            setTimeout(function(e) {
+                mobileWrap.parentElement.classList.toggle('active');
+            }, 200);
+        } else {
+            mobileWrap.parentElement.classList.toggle('active');
+        }
+        /* mobileWrap.parentElement.classList.toggle('active'); */
+        mobileWrap.classList.toggle('active');
+    });
+    /* mobile navigation */
+
     /* header dropdown code */
     let industryToggle = document.querySelector('#industry');
     let degreeToggle = document.querySelector('#degree');

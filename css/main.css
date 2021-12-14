@@ -87,3 +87,43 @@ img {
 .center {
     text-align: center;
 }
+
+@media screen and (max-width: 1050px) {}
+
+@media screen and (max-width: 1024px) {
+    .content__width {
+        justify-content: center;
+    }
+    .quart__row,
+    .fifth__row {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content__width {
+        justify-content: center;
+    }
+    .quart__row3 {
+        width: 100%;
+    }
+    .third__row2 {
+        width: 100%;
+    }
+    .third__row {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content__width {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .half__row,
+    .third__row,
+    .quart__row,
+    .fifth__row {
+        width: 100%;
+    }
+}
