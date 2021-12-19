@@ -605,6 +605,9 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
     #mobile__menu_toggle span {
         display: block;
         width: 25px;
